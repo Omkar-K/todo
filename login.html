@@ -1,0 +1,221 @@
+<HTML>
+<head>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  background: #48D1CC;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: auto !important;
+  height: 100%;
+  line-height: 1.6em;
+  min-height: 100%;
+}
+
+h2 {
+  color: rgb(34,34,34);
+  font-size: 2.2em;
+  font-weight: 200;
+  margin: 0 0 24px 0;
+}
+
+/*BUTTON DESIGN*/
+[class*='btn-'] {
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,.15);
+  border-top: 1px solid rgba(255,255,255,.15);
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font: -webkit-small-control;
+  font-size: .7em;
+  letter-spacing: 1px;
+  line-height: 140%;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+      -o-transition: all 0.1s linear;
+        transition: all 0.1s linear;
+}
+
+  .btn-minimal {
+  background-color: rgb(255,255,255);
+  border-radius: 0;
+  border: 1px solid rgb( 186, 186, 186 );
+  color: rgb( 186, 186, 186 );
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+}
+
+  .btn-minimal:hover {
+    background-color: #4195fc;
+    border: 1px solid rgba(0,0,0,.1);
+    color: rgb(255,255,255);
+    cursor: pointer;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .btn-minimal:active {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15) inset;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+/*SECTION CONTAINER*/
+section#loginBox {
+  background-color: rgb(255,255,255);
+ border: 1px solid rgba(0,0,0,.15);
+  border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 0 4px rgba(0,0,0,0.2);
+  margin: 40px auto; /*aligns center*/
+  padding: 24px;
+  width: 500px;
+}
+
+/*FORM*/
+form.minimal label {
+  display: block;
+  margin: 6px 0;
+}
+
+  form.minimal input[type="text"],
+  form.minimal input[type="email"],
+  form.minimal input[type="number"],
+  form.minimal input[type="search"],
+  form.minimal input[type="password"],
+  form.minimal textarea {
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb( 186, 186, 186 );
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+    display: block;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, 'lucida grande', tahoma, verdana, arial, sans-serif;
+    font-size: 14px;
+    margin: 6px 0 12px 0;
+    padding: 8px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+    width: 90%;
+
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+      transition: all 0.1s linear;
+  }
+
+  form.minimal input[type="text"]:focus,
+  form.minimal input[type="email"]:focus,
+  form.minimal input[type="number"]:focus,
+  form.minimal input[type="search"]:focus,
+  form.minimal input[type="password"]:focus,
+  form.minimal textarea:focus,
+  form.minimal select:focus {
+      border-color: #4195fc;
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+    color: rgb(0,0,0);
+  }
+
+    form.minimal input[type="text"]:invalid:focus,
+    form.minimal input[type="email"]:invalid:focus,
+    form.minimal input[type="number"]:invalid:focus,
+    form.minimal input[type="search"]:invalid:focus,
+    form.minimal input[type="password"]:invalid:focus,
+    form.minimal textarea:invalid:focus,
+    form.minimal select:invalid:focus {
+      border-color: rgb(248,66,66);
+      -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgb(248,66,66);
+      -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgb(248,66,66);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgb(248,66,66);
+    }
+
+p {
+  color: rgba(0,0,0,.8)
+  font-size: .8em;
+  margin: 0 0 24px 0;
+}
+</style>
+</head>
+<section id="loginBox">
+  <h1>To-Do</h1>
+	<h2>Login to the app</h2>
+	<form method="post" class="minimal" name="login" id="login_id" action="" onsubmit="return false;">
+		<label for="username">
+			Username:
+			<input type="text" name="username" id="username" placeholder="For testing: admin is the usernmae" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{4,20}$" required="required" />
+		</label>
+		<label for="password">
+			Password:
+			<input type="password" name="password" id="password" placeholder="Aa12 is the password" pattern="(?=^.{4,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+		</label>
+		<button type="submit" class="btn-minimal" onclick="validate()" id ="submit">Sign in</button>
+	</form>
+</section>
+<script type="text/javascript">
+var mysql = require('mysql');
+var pool  = mysql.createPool({
+  host     : 'mydb2019.cpyu0tgdp6bu.eu-west-1.rds.amazonaws.com',
+  user     : 'mydb2019',
+  password : 'mydb2019',
+  database : 'mydb2019',
+  port     : '3306'
+});
+pool.getConnection(function(err, connection) {
+  // Use the connection
+  connection.query('SELECT username from users where userid=1', function (error, results, fields) {
+    // And done with the connection.
+    connection.release();
+    // Handle error after the release.
+    if (error) throw error;
+    else alert(results[0].emp_name);
+    process.exit();
+  });
+});
+var text = '{"username":"admin", "password":"Aa12"}';
+var i=0, flag=0;
+//function to check the login info
+function validate()
+{
+  console.log('inside validate');
+  flag=0;
+  obj = JSON.parse(text); //parsing the json
+  var name =  document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+    if(obj.username!=name || obj.password!=password)
+    {
+      flag = 1;
+    }
+  
+  if(flag==0)
+  {
+    alert("Login Succesful");
+    console.log(window.location);
+    // window.location.hash = 'success.html';
+    // window.location = 'http://192.168.64.2/success.html';
+    window.location = "success.html";
+  }
+  else {
+    alert("Invalid Details");
+  }
+  
+  
+}
+
+</script>
